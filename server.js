@@ -5,7 +5,7 @@ const app = express();
 
 // Configuración de CORS (origen flexible)
 var corsOptions = {
-    origin: "http://localhost:8081",  // Cambiar si el front-end usa otro puerto o dominio
+    origin: "*",  // Cambiar si el front-end usa otro puerto o dominio
 };
 
 // Usar CORS con las opciones configuradas

@@ -35,9 +35,10 @@ require("./app/routes/tutorial.routes")(app);
 
 // Configuración del puerto y lanzamiento del servidor
 const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+app.listen(8080, '0.0.0.0', () => {
+    console.log("Servidor escuchando en el puerto 8080");
+  });
+  
 
 // Manejo global de errores para solicitudes no encontradas
 app.use((req, res, next) => {
